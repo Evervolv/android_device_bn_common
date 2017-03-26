@@ -87,14 +87,6 @@ ifneq (,$(strip $(wildcard $(TARGET_KERNEL_SOURCE)/drivers/gpu/ion/ion_page_pool
 export BOARD_USE_TI_LIBION := false
 endif
 
-ifeq ($(ARM_EABI_TOOLCHAIN),)
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
-KERNEL_TOOLCHAIN := $(ANDROID_TOOLCHAIN_2ND_ARCH)arm/$(TARGET_KERNEL_CROSS_COMPILE_PREFIX)$(TARGET_GCC_VERSION)/bin
-ARM_EABI_TOOLCHAIN := $(KERNEL_TOOLCHAIN)
-endif
-
-ARM_CROSS_COMPILE ?= $(KERNEL_CROSS_COMPILE)
-
 EXFAT_KM_PATH ?= $(dir $(wildcard external/*exfat*/Kconfig))
 
 ifneq (,$(EXFAT_KM_PATH))
