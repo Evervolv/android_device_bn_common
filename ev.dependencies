@@ -1,0 +1,32 @@
+[
+ {
+    "repository": "android_hardware_ti_omap4",
+    "target_path": "hardware/ti/omap4",
+    "dep_type": "hardware"
+ },
+ {
+    "repository": "android_hardware_ti_wlan",
+    "target_path": "hardware/ti/wlan",
+    "dep_type": "hardware"
+ },
+ {
+    "repository": "android_hardware_ti_wpan",
+    "target_path": "hardware/ti/wpan",
+    "dep_type": "hardware"
+ },
+ {
+    "repository": "android_kernel_bn_omap",
+    "target_path": "kernel/bn/omap",
+    "dep_type": "kernel"
+ },
+ {
+    "repository": "android_vendor_ti",
+    "target_path": "vendor/ti",
+    "dep_type": "vendor"
+ },
+ {
+    "repository": "android_vendor_widevine",
+    "target_path": "vendor/widevine",
+    "dep_type": "vendor"
+ }
+]
